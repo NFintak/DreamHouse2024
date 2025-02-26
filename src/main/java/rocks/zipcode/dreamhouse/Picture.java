@@ -21,6 +21,17 @@ public class Picture
     private Square garage2;
     private Square garagedoor1;
     private Square garagedoor2;
+    private Circle carpanel1;
+    private Circle carpanel2;
+    private Circle carpanel3;
+    private Circle carpanel4;
+    private Triangle carpanel5;
+    private Triangle carpanel6;
+    private Square carpanel7;
+    private Square carpanel8;
+    private Triangle carwindow1;
+    private Square carwindow2;
+    private Triangle carwindow3;
     private Triangle roof1;
     private Triangle roofpanel1;
     private Square roofpanel2;
@@ -118,6 +129,55 @@ public class Picture
         garagedoor2.moveHorizontal(5);
         garagedoor2.changeSize(45);
         garagedoor2.makeVisible();
+
+        carpanel1 = new Circle();
+        carpanel1.changeColor("blue");
+        carpanel1.moveVertical(150);
+        carpanel1.moveHorizontal(30);
+        carpanel1.makeVisible();
+
+        carpanel2 = new Circle();
+        carpanel2.changeColor("blue");
+        carpanel2.moveVertical(150);
+        carpanel2.moveHorizontal(50);
+        carpanel2.makeVisible();
+
+        carpanel3 = new Circle();
+        carpanel3.changeColor("blue");
+        carpanel3.moveVertical(190);
+        carpanel3.moveHorizontal(20);
+        carpanel3.makeVisible();
+
+        carpanel4 = new Circle();
+        carpanel4.changeColor("blue");
+        carpanel4.moveVertical(190);
+        carpanel4.moveHorizontal(60);
+        carpanel4.makeVisible();
+
+        carpanel5 = new Triangle();
+        carpanel5.changeColor("blue");
+        carpanel5.moveVertical(210);
+        carpanel5.changeSize(35, 20);
+        carpanel5.makeVisible();
+
+        carpanel6 = new Triangle();
+        carpanel6.changeColor("blue");
+        carpanel6.moveVertical(210);
+        carpanel6.moveHorizontal(49);
+        carpanel6.changeSize(35, 20);
+        carpanel6.makeVisible();
+
+        carpanel7 = new Square();
+        carpanel7.changeColor("blue");
+        carpanel7.moveVertical(184);
+        carpanel7.moveHorizontal(-10);
+        carpanel7.changeSize(46);
+        carpanel7.makeVisible();
+
+        carpanel8 = new Square();
+        carpanel8.changeColor("blue");
+        carpanel8.moveVertical(160);
+        carpanel8.makeVisible();
 
         roof1 = new Triangle();
         roof1.changeColor("dark gray");
@@ -285,6 +345,27 @@ public class Picture
         longpane3.moveHorizontal(109);
         longpane3.changeSize(13);
         longpane3.makeVisible();
+
+        longpane4 = new Square();
+        longpane4.changeColor("light gray");
+        longpane4.moveVertical(147);
+        longpane4.moveHorizontal(75);
+        longpane4.changeSize(13);
+        longpane4.makeVisible();
+
+        longpane5 = new Square();
+        longpane5.changeColor("light gray");
+        longpane5.moveVertical(147);
+        longpane5.moveHorizontal(92);
+        longpane5.changeSize(13);
+        longpane5.makeVisible();
+
+        longpane6 = new Square();
+        longpane6.changeColor("light gray");
+        longpane6.moveVertical(147);
+        longpane6.moveHorizontal(109);
+        longpane6.changeSize(13);
+        longpane6.makeVisible();
 
         tree1 = new Triangle();
         tree1.changeSize(150, 25);
