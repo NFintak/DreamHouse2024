@@ -16,6 +16,19 @@ public class Picture
     private Square grass;
     private Triangle driveway;
     private Square sky;
+    private Circle cloud1;
+    private Circle cloud2;
+    private Circle cloud3;
+    private Circle cloud4;
+    private Circle cloud5;
+    private Circle cloud6;
+    private Circle cloud7;
+    private Circle cloud8;
+    private Circle cloud9;
+    private Circle cloud10;
+    private Circle cloud11;
+    private Circle cloud12;
+    private Circle cloud13;
     private Triangle garageroof;
     private Square garage1;
     private Square garage2;
@@ -31,7 +44,10 @@ public class Picture
     private Square carpanel8;
     private Triangle carwindow1;
     private Square carwindow2;
-    private Triangle carwindow3;
+    private Square carwindow3;
+    private Triangle carwindow4;
+    private Square carplate1;
+    private Square carplate2;
     private Triangle roof1;
     private Triangle roofpanel1;
     private Square roofpanel2;
@@ -60,7 +76,11 @@ public class Picture
     private Square longpane4;
     private Square longpane5;
     private Square longpane6;
+    private Square treestump;
     private Triangle tree1;
+    private Triangle tree2;
+    private Triangle tree3;
+    private Triangle tree4;
     private Circle sun;
 
     /**
@@ -96,6 +116,80 @@ public class Picture
         sky.moveHorizontal(-60);
         sky.changeSize(300);
         sky.makeVisible();
+
+        cloud1 = new Circle();
+        cloud1.changeColor("white");
+        cloud1.makeVisible();
+
+        cloud2 = new Circle();
+        cloud2.changeColor("white");
+        cloud2.moveVertical(-10);
+        cloud2.moveHorizontal(10);
+        cloud2.makeVisible();
+
+        cloud3 = new Circle();
+        cloud3.changeColor("white");
+        cloud3.moveHorizontal(20);
+        cloud3.makeVisible();
+
+        cloud4 = new Circle();
+        cloud4.changeColor("white");
+        cloud4.moveVertical(-10);
+        cloud4.moveHorizontal(30);
+        cloud4.makeVisible();
+
+        cloud5 = new Circle();
+        cloud5.changeColor("white");
+        cloud5.moveHorizontal(40);
+        cloud5.makeVisible();
+
+        cloud6 = new Circle();
+        cloud6.changeColor("white");
+        cloud6.moveVertical(-25);
+        cloud6.moveHorizontal(80);
+        cloud6.makeVisible();
+
+        cloud7 = new Circle();
+        cloud7.changeColor("white");
+        cloud7.moveVertical(-35);
+        cloud7.moveHorizontal(90);
+        cloud7.makeVisible();
+
+        cloud8 = new Circle();
+        cloud8.changeColor("white");
+        cloud8.moveVertical(-25);
+        cloud8.moveHorizontal(100);
+        cloud8.makeVisible();
+
+        cloud9 = new Circle();
+        cloud9.changeColor("white");
+        cloud9.moveVertical(-35);
+        cloud9.moveHorizontal(110);
+        cloud9.makeVisible();
+
+        cloud10 = new Circle();
+        cloud10.changeColor("white");
+        cloud10.moveVertical(-25);
+        cloud10.moveHorizontal(120);
+        cloud10.makeVisible();
+
+        cloud11 = new Circle();
+        cloud11.changeColor("white");
+        cloud11.moveVertical(60);
+        cloud11.moveHorizontal(-15);
+        cloud11.makeVisible();
+
+        cloud12 = new Circle();
+        cloud12.changeColor("white");
+        cloud12.moveVertical(50);
+        cloud12.moveHorizontal(-25);
+        cloud12.makeVisible();
+
+        cloud13 = new Circle();
+        cloud13.changeColor("white");
+        cloud13.moveVertical(60);
+        cloud13.moveHorizontal(-35);
+        cloud13.makeVisible();
 
         garageroof = new Triangle();
         garageroof.changeColor("dark gray");
@@ -178,6 +272,47 @@ public class Picture
         carpanel8.changeColor("blue");
         carpanel8.moveVertical(160);
         carpanel8.makeVisible();
+
+        carwindow1 = new Triangle();
+        carwindow1.changeColor("light gray");
+        carwindow1.moveVertical(215);
+        carwindow1.moveHorizontal(10);
+        carwindow1.changeSize(20, 15);
+        carwindow1.makeVisible();
+
+        carwindow2 = new Square();
+        carwindow2.changeColor("light gray");
+        carwindow2.moveVertical(180);
+        carwindow2.changeSize(20);
+        carwindow2.makeVisible();
+
+        carwindow3 = new Square();
+        carwindow3.changeColor("light gray");
+        carwindow3.moveVertical(180);
+        carwindow3.moveHorizontal(10);
+        carwindow3.changeSize(20);
+        carwindow3.makeVisible();
+
+        carwindow4 = new Triangle();
+        carwindow4.changeColor("light gray");
+        carwindow4.moveVertical(215);
+        carwindow4.moveHorizontal(40);
+        carwindow4.changeSize(20, 10);
+        carwindow4.makeVisible();
+
+        carplate1 = new Square();
+        carplate1.changeColor("yellow");
+        carplate1.moveVertical(215);
+        carplate1.moveHorizontal(5);
+        carplate1.changeSize(10);
+        carplate1.makeVisible();
+
+        carplate2 = new Square();
+        carplate2.changeColor("yellow");
+        carplate2.moveVertical(215);
+        carplate2.moveHorizontal(15);
+        carplate2.changeSize(10);
+        carplate2.makeVisible();
 
         roof1 = new Triangle();
         roof1.changeColor("dark gray");
@@ -367,17 +502,42 @@ public class Picture
         longpane6.changeSize(13);
         longpane6.makeVisible();
 
+        treestump = new Square();
+        treestump.changeColor("black");
+        treestump.moveVertical(165);
+        treestump.moveHorizontal(215);
+        treestump.changeSize(10);
+        treestump.makeVisible();
+
         tree1 = new Triangle();
-        tree1.changeSize(150, 25);
-        tree1.moveVertical(70);
-        tree1.moveHorizontal(210);
+        tree1.moveVertical(170);
+        tree1.moveHorizontal(230);
+        tree1.changeSize(30, 35);
         tree1.makeVisible();
+
+        tree2 = new Triangle();
+        tree2.moveVertical(155);
+        tree2.moveHorizontal(230);
+        tree2.changeSize(30, 35);
+        tree2.makeVisible();
+
+        tree3 = new Triangle();
+        tree3.moveVertical(140);
+        tree3.moveHorizontal(230);
+        tree3.changeSize(30, 35);
+        tree3.makeVisible();
+
+        tree4 = new Triangle();
+        tree4.moveVertical(125);
+        tree4.moveHorizontal(230);
+        tree4.changeSize(30, 35);
+        tree4.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveVertical(-35);
-        sun.moveHorizontal(225);
-        sun.changeSize(30);
+        sun.moveVertical(-40);
+        sun.moveHorizontal(235);
+        sun.changeSize(35);
         sun.makeVisible();
 
 
